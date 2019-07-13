@@ -11,7 +11,7 @@ pip install mechanize
 
 Usage:
 
-# Bruteforce Gmail 
+# BruteForce Gmail Attack
 ```bash
 python3 Brute_Force.py -g Account@gmail.com -l File_list
 
@@ -19,7 +19,7 @@ python3 Brute_Force.py -g Account@gmail.com -p Password_Single
 ```
 
 
-# Bruteforce Hotmail
+# BruteForce Hotmail Attack
 ```bash
 python3 Brute_Force.py -t Account@hotmail.com -l File_list
 
@@ -27,7 +27,7 @@ python3 Brute_Force.py -t Account@hotmail.com -p Password_Single
 ```
 
 
-# Bruteforce Twitter
+# BruteForce Twitter Attack
 
 ```bash
 python3 Brute_Force.py -T Account_Twitter -l File_list
