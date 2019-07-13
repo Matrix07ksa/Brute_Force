@@ -3,8 +3,8 @@
 
 # install :
 
- pip install proxylist
- pip install mechanize
+pip install proxylist
+pip install mechanize
 
 
 Usage:
