@@ -4,6 +4,7 @@
 # install :
 
 pip install proxylist
+
 pip install mechanize
 
 
@@ -12,12 +13,14 @@ Usage:
 # Bruteforce Gmail 
 
 python3 Brutoforce.py -g Account@gmail.com -l File_list
+
 python3 Brutoforce.py -g Account@gmail.com -p Password_Single
 
 
 # Bruteforce Hotmail
  
 python3 Brute_force.py -t Account@hotmail.com -l File_list
+
 python3 Brute_force.py -t Account@hotmail.com -p Password_Single
 
 
