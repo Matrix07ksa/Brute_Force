@@ -49,7 +49,7 @@ use.add_option("-p","--password",dest="password",help="Write Your passowrd ")
 brows = Browser()
 brows.set_handle_robots(False)
 brows._factory.is_html = True
-brows.addheaders = [('User-agent','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.19) Gecko/20081202 Firefox (Debian-2.0.0.19-0etch1)']
+brows.addheaders = [('User-agent','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.19) Gecko/20081202 Firefox (Debian-2.0.0.19-0etch1)')]
 
 def proxy():
     logging.basicConfig()
