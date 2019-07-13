@@ -8,18 +8,18 @@ pip install mechanize
 
 Usage:
 
-# Brutoforce Gmail 
+# Bruteforce Gmail 
 
 python3 Brutoforce.py -g Account@gmail.com -l File_list
 python3 Brutoforce.py -g Account@gmail.com -p Password_Single
 
 
-# Brutoforce Hotmail
+# Bruteforce Hotmail
  
-python3 Brutoforce.py -t Account@hotmail.com -l File_list
-python3 Brutoforce.py -t Account@hotmail.com -p Password_Single
+python3 Brute_force.py -t Account@hotmail.com -l File_list
+python3 Brute_force.py -t Account@hotmail.com -p Password_Single
 
 
-# Brutoforce Twitter
+# Bruteforce Twitter
 
-python3 Brutoforce.py -t Account_Twitter -l File_list
+python3 Brutoforce.py -T Account_Twitter -l File_list
