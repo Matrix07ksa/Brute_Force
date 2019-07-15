@@ -53,12 +53,12 @@ brows = Browser()
 brows.set_handle_robots(False)
 brows._factory.is_html = True
 brows.addheaders = [('User-agent','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.19) Gecko/20081202 Firefox (Debian-2.0.0.19-0etch1)')]
-proxyList = options.proxy
+proxy_List = options.proxy
 def proxy():
     logging.basicConfig()
     pl = ProxyList()
     try:
-        pl.load_file(proxyList)
+        pl.load_file(proxy_List)
     except:
         sys.exit('[!] Proxy File format has incorrect | EXIT...')
     pl.random()
