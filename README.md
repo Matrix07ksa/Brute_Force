@@ -46,6 +46,7 @@ python3 Brute_Force.py -f Account_facebook -l File_list -X proxy-list.txt
 
 ```bash
 يفضل تشغيل VPN
+Start On Vpn
 python3 Brute_Force.py -n Account_Netflix -l File_list
 python3 Brute_Force.py -n Account_Netflix -l File_list -X proxy-list.txt
 
