@@ -2,6 +2,7 @@
 ![alt text](https://6.top4top.net/p_129299z0c1.png)
 ![alt text](https://1.top4top.net/p_12925zyk22.png)
 [![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)](http://www.python.org/download/)
+[![GPL](https://img.shields.io/badge/GPL-V3.0-red.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ## install :
 ```bash
