@@ -1,6 +1,6 @@
 # Brute_Force
-![alt text](https://6.top4top.net/p_129299z0c1.png)
-![alt text](https://1.top4top.net/p_12925zyk22.png)
+![alt text](https://1.bp.blogspot.com/-oPEVZN0ymsc/XS59nlfrrgI/AAAAAAAAPmI/5TsU1GjCzsE32ognWuV1xI-5jUvLjCkdgCLcBGAs/s1600/Brute_Force_1.png)
+![alt text](https://1.bp.blogspot.com/-SIeGPGxLUWQ/XS59nkXfYEI/AAAAAAAAPmM/P0-rKgkEjm0iFTrhpwhxBAV7vAKAo0KPQCLcBGAs/s1600/Brute_Force_2.png)
 [![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)](http://www.python.org/download/)
 [![GPL](https://img.shields.io/badge/GPL-V3.0-red.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
