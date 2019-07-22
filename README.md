@@ -6,6 +6,8 @@
 
 ## install :
 ```bash
+sudo apt install python3 python3-pip
+
 pip install proxylist
 
 pip install mechanize
