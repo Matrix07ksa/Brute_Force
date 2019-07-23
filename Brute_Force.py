@@ -20,7 +20,7 @@ import random
 try:
     import cookielib
 except:
-    print("pip3 install cookielib")
+    import http.cookiejar as cookielib
 try:
     import mechanize
 except:
