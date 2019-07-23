@@ -11,8 +11,6 @@ sudo apt install python3 python3-pip
 pip3 install proxylist
 
 pip3 install mechanize
-
-pip3 install cookielib
 ```
 
 
