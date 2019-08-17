@@ -5,7 +5,7 @@
 ![platform](https://img.shields.io/badge/Platform-Linux%7CMacOS%7CWindows-brightgreen.svg)
 ![alt text](https://1.bp.blogspot.com/-oPEVZN0ymsc/XS59nlfrrgI/AAAAAAAAPmI/5TsU1GjCzsE32ognWuV1xI-5jUvLjCkdgCLcBGAs/s1600/Brute_Force_1.png)
 ![alt text](https://1.bp.blogspot.com/-SIeGPGxLUWQ/XS59nkXfYEI/AAAAAAAAPmM/P0-rKgkEjm0iFTrhpwhxBAV7vAKAo0KPQCLcBGAs/s1600/Brute_Force_2.png)
-
+![Twitter](https://img.shields.io/twitter/follow/Matrix0700.svg?style=social&label=Follow)
 ## install :
 ```bash
 sudo apt install python3 python3-pip
