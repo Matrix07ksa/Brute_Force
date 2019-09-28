@@ -81,6 +81,7 @@ useragents = [
 brows.addheaders = [('User-agent',random.choice(useragents))]
 brows.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(),max_time=1)
 proxyList = options.proxy
+#Coding Function Proxy 0xAbdullah
 def proxy():
     logging.basicConfig()
     pl = ProxyList()
