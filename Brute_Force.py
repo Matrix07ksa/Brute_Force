@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 import smtplib
 import threading
@@ -213,9 +213,6 @@ if options.gmail == None  :
                     print(use.usage)
                     exit()       
     elif options.hotmail != None or options.gmail == None:
-#        smtp_srverH= smtplib.SMTP('smtp.live.com', 587)
-#        smtp_srverH.ehlo()
-#        smtp_srverH.starttls()
         if options.password != None or options.list_password == None  :
             print("%s<<<<<<+++++Start  Attacking Email+++++>>>>>%s"%(R,W))
             try :
